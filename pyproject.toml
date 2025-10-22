@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+  "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]

@@ -68,7 +68,7 @@ This will cause newly created containers (e.g ones that come up after crashing o
 
 This project was created to learn Kubernetes operator functionality, and initially supports crashloop events only. Depending on time and interest, I plan to add:
 
- * Helm Chart.
+ * Helm Chart deployment.
  * Reverting ENV changes when pods stabilise.
  * Marking pods as changed to prevent re-applies.
  * Setting LOG_LEVEL via ENV.

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "data": {
+    "BASE": {
+      "version": "3.14.0-alpine3.22"
+    },
+    "KOPF": {
+      "version": "1.38.0",
+      "url": "https://pypi.org/project/kopf/2.19/"
+    },
+    "KUBERNETES": {
+      "version": "34.1.0",
+      "url": "https://pypi.org/project/kubernetes/34.1.0/"
+    }
+  }
+}

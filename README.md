@@ -1,9 +1,13 @@
 # kube-env-switch
+
+* ![Build Status](https://github.com/snw35/kube-env-switch/actions/workflows/update.yml/badge.svg)
+* [Dockerhub: snw35/envswitch](https://hub.docker.com/r/snw35/envswitch)
+
 Kubernetes operator that can alter ENV values at runtime in response to events.
 
 ## About
 
-This is a [Kubernetes Operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) that can alter the environemnt varible (ENV) values of pods at runtime. It currently supports the following event types:
+This is a [Kubernetes Operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) that can alter the environment variable (ENV) values of pods at runtime. It currently supports the following event types:
 
  * CrashLoopBackoff
 
@@ -24,7 +28,7 @@ To use this operator, you need to:
 
 ## How to Use
 
-Clone the repo and open the `kube/envswitch.yaml` file. Customize the ENV variable values in the deployment at the bottom to set:
+Clone the repo and open the `kube/envswitch.yaml` file. Customise the ENV variable values in the deployment at the bottom to set:
   * `ENV_PATCH_JSON` with the ENV you want to change, and the value you want to set it to.
 
 You can configure the other ENV values to change the label selector and number of restarts to wait for, if desired.
@@ -54,7 +58,7 @@ You should see the `env-switch` pods start up in the `operator` namespace, ident
 The `tests/end-to-end` directory contains a Dockerfile for a crashlooping container and associated deployment. This can be be used for a full end-to-end test, where it will:
 
  * Identify the annotated pods, and climb the resource tree to find their deployment.
- * Place a watcher on the deployoment's pods for the crashloop event.
+ * Place a watcher on the deployment’s pods for the crashloop event.
  * Trigger the watcher when a crashloop happens.
  * Switch the ENV varible `FIX_ME` from 0 to 1 in the deployment spec.
 
@@ -65,7 +69,7 @@ This will cause newly created containers (e.g ones that come up after crashing o
 This project was created to learn Kubernetes operator functionality, and initially supports crashloop events only. Depending on time and interest, I plan to add:
 
  * Helm Chart.
- * Reverting ENV changes when pods stabalize.
+ * Reverting ENV changes when pods stabilise.
  * Marking pods as changed to prevent re-applies.
  * Setting LOG_LEVEL via ENV.
  * Allowing a scale range and increment for integer ENV changes.

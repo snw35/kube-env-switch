@@ -1,0 +1,16 @@
+[__config__]
+oldver = "old_ver.json"
+newver = "new_ver.json"
+
+[BASE]
+source = "container"
+container = "library/python"
+include_regex = "\\d+\\.\\d+\\.?\\d?-alpine\\d\\.\\d+"
+
+[KOPF]
+source = "pypi"
+pypi = "kopf"
+
+[KUBERNETES]
+source = "pypi"
+pypi = "kubernetes"

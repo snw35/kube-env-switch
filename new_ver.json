@@ -5,8 +5,8 @@
       "version": "3.14.3-alpine3.23"
     },
     "KOPF": {
-      "version": "1.42.5",
-      "url": "https://pypi.org/project/kopf/1.42.5/"
+      "version": "1.43.0",
+      "url": "https://pypi.org/project/kopf/1.43.0/"
     },
     "KUBERNETES": {
       "version": "35.0.0",

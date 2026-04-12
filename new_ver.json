@@ -2,7 +2,7 @@
   "version": 2,
   "data": {
     "BASE": {
-      "version": "3.14.3-alpine3.23"
+      "version": "3.14.4-alpine3.23"
     },
     "KOPF": {
       "version": "1.44.5",

@@ -9,8 +9,8 @@
       "url": "https://pypi.org/project/kopf/1.44.6/"
     },
     "KUBERNETES": {
-      "version": "36.0.2",
-      "url": "https://pypi.org/project/kubernetes/36.0.2/"
+      "version": "36.0.3",
+      "url": "https://pypi.org/project/kubernetes/36.0.3/"
     }
   }
 }
